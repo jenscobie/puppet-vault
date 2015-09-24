@@ -1,6 +1,6 @@
 # Vault Puppet Module for Boxen
 
-Installs [HashiCorp Vault].
+Installs [HashiCorp Vault](https://vaultproject.io/).
 
 ## Usage
 
