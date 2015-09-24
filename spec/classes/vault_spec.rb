@@ -1,9 +1,15 @@
 require 'spec_helper'
-# Rename this file to classname_spec.rb
-# Check other boxen modules for examples
-# or read http://rspec-puppet.com/tutorial/
+
 describe 'vault' do
+  let(:facts) { default_test_facts }
+
   it do
-    should contain_anchor('Hello_World')
+    should include_class('brewcask')
+
+    should contain_package('vault').with({
+      :ensure          => 'present',
+      :provider        => 'brewcask',
+      :install_options => ['--appdir=/Applications', '--binarydir=/test/boxen/bin'],
+    })
   end
 end
