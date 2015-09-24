@@ -1,13 +1,26 @@
 # Vault Puppet Module for Boxen
 
-An example of how we write Puppet modules for Boxen. Replace this
-paragraph with a short explanation of what the heck makes your module
-useful.
+Installs [HashiCorp Vault].
 
 ## Usage
 
 ```puppet
+# Install the default version of Vault
 include vault
+```
+
+## Parameters
+
+You can customise this module by configuring some optional class parameters. Usually you'd do this via Hiera, but you could also explicitly pass those parameters in puppet code like `class { 'vault': version => '0.2.0', }`.
+
+* `version`: The version of HashiCorp Vault to install. For example, if you specify `0.2.0`, the module would install Vault 0.2.0
+
+All of these parameters have sensible defaults, and are provided if you need more control.
+
+Example hiera data in YAML:
+
+```yaml
+vault::version: '0.2.0'
 ```
 
 ## Required Puppet Modules
