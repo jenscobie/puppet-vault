@@ -1,6 +1,6 @@
 # Vault Puppet Module for Boxen
 
-Installs [HashiCorp Vault](https://vaultproject.io/).
+Installs [Vault](https://vaultproject.io/), a tool for managing secrets.
 
 ## Usage
 
@@ -12,6 +12,10 @@ include vault
 ## Required Puppet Modules
 
 * `boxen`
+* `brewcask`
+* `homebrew`
+* `repository`
+* `stdlib`
 
 ## Development
 
