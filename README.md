@@ -5,7 +5,6 @@ Installs [Vault](https://vaultproject.io/), a tool for managing secrets.
 ## Usage
 
 ```puppet
-# Install the latest version of Vault
 include vault
 ```
 
