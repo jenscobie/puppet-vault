@@ -1,6 +1,5 @@
 /.bundle
 /.idea
-/.ruby-version
 /spec/fixtures/.librarian
 /spec/fixtures/.tmp
 /spec/fixtures/Puppetfile.lock
